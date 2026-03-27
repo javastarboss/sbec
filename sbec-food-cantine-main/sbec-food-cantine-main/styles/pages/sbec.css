@@ -1,0 +1,882 @@
+.mains {
+  margin-top: 195px;
+cursor: pointer;
+background-color: rgba(97, 2, 2, 0.267);
+  -webkit-tap-highlight-color: transparent
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.product-grids {
+  
+  display: grid;
+
+  grid-template-columns: repeat(8, 1fr);
+}
+@media (max-width: 2000px) {
+  .product-grids {
+    grid-template-columns: repeat(7, 1fr);
+    
+  }
+}@media (max-width: 360px){
+  .sbec-header-middle-section{
+    margin-right:-6px
+  }
+  
+}
+
+/* @media is used to create responsive design (making the
+   website look good on any screen size). This @media
+   means when the screen width is 2000px or less, we
+   will divide the grid into 7 columns instead of 8. */
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+@media (max-width: 1600px) {
+  .product-grids {
+    grid-template-columns: repeat(5, 1fr);
+    
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-grids {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 999px) {
+  .product-grids {
+    grid-template-columns: repeat(3, 1fr);
+  } 
+}
+.link-primary{color: red
+}
+@media (max-width: 730px) {
+  .mains {
+  margin-top: 180px;
+  margin-left: 33px;
+  margin-right: 33px;
+
+}
+  .product-grids {
+    grid-template-columns: repeat(2, 1fr);}
+   
+}
+
+@media (max-width: 520px) {
+  .product-grids {
+    grid-template-columns: repeat(2, 1fr);
+  }.product-containers {
+  border: solid rgb(2, 50, 73) 5px;
+  margin: 15px 9px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+ position: relative;
+  
+
+  display: flex;
+  flex-direction: column;
+}
+.product-image-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 100%;
+max-height: 200px;
+  margin-bottom: 30px;
+  margin-top: -40px;
+
+}
+}
+@media (max-width: 580px){
+  .product-image-containers{
+    height: 100%;
+max-height: 200px;
+  }
+}
+
+/*.product-containers {
+  border: solid rgb(1, 1, 139) 5px;
+  margin: 8px 5px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+ position: relative;
+;
+background-color: black;
+  display: flex;
+  flex-direction: column;
+}*/
+
+
+.product-containers {
+  position: relative;
+  margin: 8px 5px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+ border: solid rgba(248, 4, 4, 0.651) 5px;
+  /*border: solid rgb(25, 0, 165) 5px;*/
+
+  background-color: #000; 
+  box-shadow: 0 0 25px rgb(0, 0, 0), 0 0 45px rgb(0, 0, 0);
+ 
+  transition: box-shadow 0.3s ease, scale 0.3s ease;
+}
+
+
+.product-containers:hover {
+scale: calc(1.07);
+  box-shadow: 0 0 35px rgb(255, 13, 5), 0 0 55px rgb(255, 5, 5);
+
+}
+
+@media(max-width: 500px){
+.product-containers:hover{
+  box-shadow: 0.2 0 0;
+  scale: calc(1.03);
+}
+
+}
+
+.product-image-containers {
+   border-bottom: solid rgba(255, 0, 0, 0.651) 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 250px;
+  margin-bottom: 30px;
+  margin-top: -40px;
+
+}
+
+.product-images {
+  
+  width: 100%;
+
+height: 100%;
+}
+
+.product-names {
+  text-align: center;
+  height: 40px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  margin-left: 80px;
+  scale: 1.2;
+
+}
+
+.product-stars {
+  width: 100px;
+  margin-right: 6px;
+  
+}
+
+.product-rating-count {
+  color: rgb(0, 47, 255);
+  cursor: pointer;
+  margin-top: 3px;
+  margin-right: 20px;
+  background-color: bisque;
+  border-radius: 100px;
+}
+
+.prices {
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 500px;
+  margin-right: 50px;
+  margin-left: 50px;
+ background-color:azure;
+  font-weight: 900;
+  border: solid 3.5px rgb(255, 208, 0);
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}
+
+.product-quantity-containers {
+  margin-bottom: 17px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+z-index: 4;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-buttons {
+
+z-index: 0;
+margin:auto;
+
+color: rgb(0, 0, 0);
+font-size: 15px;
+padding: 12px 20px;
+
+font-weight: bold;
+  border-radius: 50px;
+background:linear-gradient(to top, rgb(233, 232, 163),red,red, rgb(255, 0, 0));;
+/*background:linear-gradient(to top, rgb(11, 218, 218), rgb(0, 38, 255));*/
+ /* box-shadow: 0 0 25px rgb(2, 21, 194) ;*/
+  border: none;
+   border-bottom: rgb(243, 243, 243) solid 3px;
+  transition:transform 0.25s ease-in, background-color 0.15s ease-in-out ;
+}.add-to-cart-buttons:hover{
+  opacity: 0.5;
+}.add-to-cart-buttons:active{
+transform: scale(0.5);
+}
+.like-container{
+  display: grid;
+  grid-template-columns: 30px 30px;
+
+}.admin{
+  position: absolute;
+margin-top: 100px;
+background-color:transparent;
+border: none;
+color:transparent;
+padding: 10px;
+}.added-to-cart-visible{
+    opacity: 1;
+     color: rgb(6, 125, 98);
+  font-size: 17px;
+text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  margin-bottom: 8px;
+  font-weight: 800;
+}.like-container{
+position: relative;
+ z-index: 1;
+}
+.like{
+  position: absolute;
+ left: 60px;
+   z-index: 1;
+   width:40px;
+   top: -5px;
+   transition: scale 0.15s ease;
+} 
+.like:active, .dislike:active{
+  scale: calc(0.5);
+}
+.id{
+  color: white ;
+  position: fixed;
+  background-color: rgb(14, 13, 13);
+  z-index: 9;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+padding: 10px 30px;
+font-size: 20px;
+font-weight: 900;
+}
+.dislike{
+     transition: scale 0.15s ease;
+  position:absolute;
+right:60px;
+ z-index: 1;
+width: 40px;
+top:-5px
+}.like-count{
+  position: absolute;
+  z-index: 1;
+   font-weight: 700;
+bottom: -75px;
+ left: 56px;
+padding:5px 10px;
+  border-radius: 500px;
+  border: white 1px solid;
+ background-color:rgb(73, 72, 72);
+;
+}.dislike-count{
+  position: absolute;
+  z-index: 1;
+  font-weight: 700;
+   right:56px;
+   bottom: -75px;
+ padding:5px 10px;
+  border-radius: 500px;
+    border: white 1px solid;
+ background-color:rgb(73, 72, 72);
+;
+}/* Add this to your CSS */
+/* Add this to your CSS */
+.rating-wrapper {
+  position: relative;
+  width: 80px;            /* <--- change this to shrink/expand the rating UI */
+  height: auto;
+  display: inline-block;
+  user-select: none;
+}
+
+/* the star image scales to the wrapper width */
+.rating-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;   /* ensure overlay catches the events, not the image */
+}
+
+/* invisible overlay that catches pointer events exactly over the image */
+.rating-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  touch-action: none;     /* important for pointer events on touch devices */
+  cursor: pointer;
+  /* background: rgba(255,0,0,0.1);  -- use to debug overlay */
+}
+
+.cash{
+  border-radius: 30px;
+  border: none;
+  padding: 3px 25px;
+  color: rgb(19, 16, 16);
+  background-color: rgb(255, 255, 255);    border-bottom: 5px solid rgb(6, 255, 255);
+box-shadow: 0 0 15px rgb(0, 0, 0);
+}.stick{ color: rgb(255, 255, 255);
+background: linear-gradient(to right, rgb(170, 6, 6), rgb(255, 136, 0));
+  border-bottom: rgb(255, 255, 255) solid 3px;
+box-shadow: 0 0 15px rgb(0, 0, 0);
+ 
+}.cash, .stick{
+transition: transform 0.15s ease;
+cursor: pointer;
+}
+.cash:active, .stick:active{
+  transform: scale(0.8);
+}
+.likee{
+  display: none;
+}@media(max-width: 500px){
+  .search-button{
+    border-radius: 100px;
+  }.product-containers{
+
+  }.mains{
+    margin-left: 0;
+    margin-right: 0;
+  }.like{
+    margin-left: -15px;
+    scale: 0.8;
+  }.dislike{
+    margin-right: -15px;
+    scale: 0.8;
+  }.dislike-count{
+    margin-right: -15px;
+        scale: 0.75;
+  }.like-count{
+    margin-left: -10px;
+        scale: 0.75;
+  }.info{
+    padding: 10px 30px;
+  }.logoutBtn{
+    padding: 10px 20px;
+  }.add-to-cart-buttons{
+  scale: 0.8;
+  margin-top: -120px;
+  }.inside{
+    scale: 0.7;
+    margin-left: -10px;
+  }.rating-image{
+    scale: 0.9;
+    margin-bottom: -20px;
+  }.rating-count{
+    margin-left: -25px;
+  }.product-grids{
+   
+  }.like-container{
+    margin-top: 10px;
+  }.amount{
+    font-size: 25px;
+  }.logo{
+    margin-left: -20px;
+  }.cash{
+    scale: 0.87;
+  }.food{
+    font-size: 15px;
+  }.discription{
+    margin-top: 0px;
+  }.discription1{
+    margin-top: 0;
+  }
+}.stick{
+  display: non;
+}.he{
+  display: none;
+}.below{
+
+}.divs {
+  z-index: 5;
+  font-size: 25px;
+  color: white; 
+  margin-top:50px
+}
+
+.maining {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  margin-top: 100px;
+  display:grid;
+grid-template-columns: repeat(6, 200px);
+  justify-content: left;  
+  align-items: left;     
+}.img{
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 10px;
+}@media(max-width: 400px){
+#loading-screen span{
+  margin-top: 20px;
+}.added-to-cart-visible{
+    margin-left: 50px;
+    font-size: 12px;
+    margin-bottom: -20px;
+    padding-bottom: 50px;
+  }
+}@media(max-width: 450px){
+  .product-containers{
+    height: 100%;
+    max-height: 420px;
+  }.product-images{
+    height:180px;
+  }.prices{
+    scale: calc(0.8);
+  }
+}.rating-count{
+  color: rgb(23, 79, 233);
+  
+}
+.rating-block:active{
+  opacity: 0.6;
+}@media(max-width: 385px){
+  .prices{
+    scale: calc(0.9);
+  }.product-images{
+    height:160px;
+  
+
+}.rating-image{
+  scale: calc(0.8);
+}}
+ 
+
+
+
+/* This covers the whole screen with a semi-transparent dark background */
+.page-overlay {
+    position: fixed;
+    top: 90;
+    left: 0;
+    width: 25%;
+    height: 2000px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9;
+}
+.page-content h3{
+  color: red;
+  font-size: 23px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+   margin-left: -40px;
+} 
+
+.page-content span{
+
+color: #000;
+font-weight: 900;
+
+}
+.spant{
+  color: rgb(255, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 30px;
+
+   margin-left: -30px;
+ 
+font-weight: 900;
+
+}
+.user-id{
+  color: #ff0000;
+  font-size: 20px;
+font-weight: 900;
+    margin-left: -30px;
+margin-top: 15px;
+font-weight: 900;
+
+}
+.user-amount{
+   color: #ff0000;
+font-weight: 900;
+font-size: 20px;
+   margin-left: -30px;
+}
+
+
+
+.page-overlay {
+    position: fixed;
+    top: 0; /* Fixed: Added unit and set to 0 for full coverage */
+    left: 0;
+    text-align: left;
+    width: 100%; /* Fixed: Changed from 25% to cover screen */
+    height: 100%; /* Fixed: Changed from 2000px */
+    background: rgba(0, 0, 0, 0.6); /* Added: Darkens the background app */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Fixed: Higher than header/loading screen */
+}
+
+.page-content {
+    scale: 1;
+    background: linear-gradient(to right, rgb(250, 105, 105), #ffadad, #f3b9b9, #ffd5d5, #fcdddd, #f1dada);
+    /* margin-left: 60px; <-- Remove this to keep it perfectly centered */
+    padding:20px 90px;
+    border-radius: 20px;
+    border-left: 12px solid #ca1d1d; 
+   border-bottom: 12px solid #810404; 
+    text-align: left;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Stronger shadow for your 3D look */
+}
+
+/* JavaScript toggles this class */
+.page-overlay.active {
+    display: flex;
+}
+@media(max-width: 600px){
+  .page-content{
+    scale: 0.88;
+  }
+}
+@media(max-width: 425px){
+.page-content h3{
+  color: red;
+  font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+}.name{
+  color: rgb(255, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 22px;
+}
+
+.page-content span{
+font-size: 20px;
+color: #000;
+font-weight: 900;
+}
+.user-id{
+  color: #ff0000;
+  font-size: 22px;
+font-weight: 900;
+}
+.user-amount{
+   color: #ff0000;
+font-weight: 900;
+font-size: 22px;
+
+}
+
+}
+@media(max-width: 375px){
+.page-content h3{
+  color: red;
+  font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+margin-left: 20px;
+}.name{
+  color: rgb(255, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 22px;
+margin-left: 20px;
+}
+
+.page-content span{
+font-size: 20px;
+color: #000;
+font-weight: 900;
+}
+.user-id{
+  color: #ff0000;
+  font-size: 22px;
+font-weight: 900;
+}
+.user-amount{
+   color: #ff0000;
+font-weight: 900;
+font-size: 22px;
+
+}
+.page-content {
+
+    background: linear-gradient(to right, rgb(252, 138, 138), #fac2c2, #faecec, #fdf5f5);
+    /* margin-left: 60px; <-- Remove this to keep it perfectly centered */
+    padding:40px;
+    border-radius: 20px;
+    border-left: 12px solid #ca1d1d; 
+  
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Stronger shadow for your 3D look */
+}
+}
+
+/* ===== Force non-stretching add-to-cart buttons (PLACE AT END OF CSS) ===== */
+.product-containers .add-to-cart-buttons {
+  display: inline-block !important;    /* prevents flex/grid from forcing full width */
+  width: auto !important;              /* override any width:100% */
+  max-width: 220px !important;         /* cap width so it doesn't grow too wide */
+  box-sizing: border-box !important;
+  white-space: nowrap !important;      /* keep text in one line */
+  padding: 12px 34px !important;
+  margin: 18px auto 22px !important;   /* horizontally center inside the card */
+  align-self: center !important;       /* center in flex column */
+  justify-self: center !important;     /* center in grid cell */
+  position: relative !important;       /* ensure pseudo elements are relative to button */
+  z-index: 3 !important;
+  overflow: visible !important;
+  text-align: center !important;
+  color: #f8f8f8;
+}
+
+/* Keep glow pseudos sized to the button */
+.product-containers .add-to-cart-buttons::before,
+.product-containers .add-to-cart-buttons::after {
+  /* ensure pseudos size relative to the button and don't stretch container */
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+/* small-screen tweak */
+@media (max-width:520px) {
+  .product-containers .add-to-cart-buttons {
+    max-width: 180px !important;
+    padding: 9px 18px !important;
+    font-size: 14px !important;
+margin-bottom: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ----------------- Restore moving glow for add-to-cart buttons -----------------
+   Paste this at the VERY END of admin.css
+-------------------------------------------------------------------------------*/
+
+/* make sure button is the positioning context (you already have this) */
+.product-containers .add-to-cart-buttons {
+  position: relative !important;
+  z-index: 1 !important;
+  /* keep compact button sizing as before */
+  display: inline-block !important;
+  width: auto !important;
+  border-radius: 10px;
+ 
+}
+
+/* glow pseudo: moving rainbow background */
+.product-containers .add-to-cart-buttons::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 12px;
+  z-index: 1;
+  pointer-events: none;
+
+
+  /* important: ensure large background so animation moves */
+  background: linear-gradient(
+    45deg,
+    red, orange, yellow, green, cyan, blue, violet, hotpink
+  );
+  background-size: 600% 600%;
+
+  /* blur and subtle base (same as before) */
+  filter: blur(8px);
+  opacity: 1;                    /* default hidden, show on hover */
+  transition: opacity 0.28s ease;
+border-radius: 10px;
+  /* <-- THIS restores the movement: */
+  animation: glowing 10s linear infinite;
+  animation-play-state: running;
+}
+
+/* inner dark layer behind the button so glow stands out */
+.product-containers .add-to-cart-buttons::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radiusolor: rgba(0,0,0,0.06);
+  pointer-events: none;
+}
+
+/* show glow on hover/focus for pointer devices (desktop) */
+@media (hover:hover) {
+  .product-containers .add-to-cart-buttons:hover::before,
+  .product-containers .add-to-cart-buttons:focus::before {
+    opacity: 1;
+  }
+}
+
+/* If you want the moving glow ALWAYS visible (including on mobile),
+   uncomment the following rule — note: may be heavy on low-end devices.
+*/
+/*
+.product-containers .add-to-cart-buttons::before {
+  opacity: 1 !important;
+}
+*/
+
+/* mobile: reduce blur/animation cost, keep it subtle */
+
+/* keyframes — ensure name matches animation above */
+@keyframes glowing {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+
+
+
+/* ===== FIX: Keep text visible while glowing ===== */
+
+.product-containers .add-to-cart-buttons {
+  position: relative !important;
+  z-index: 0 !important;
+  background-color: #1a1a1a !important; /* solid dark background */
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+  border-radius: 12px;
+border: solid 5px white;
+
+  overflow: hidden; /* keeps glow nicely shaped */
+}
+
+/* Glow stays BEHIND the button */
+.product-containers .add-to-cart-buttons::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 12px;
+ background: linear-gradient(
+    45deg,
+   orange, rgb(255, 0, 0), rgb(235, 133, 0),rgb(255, 0, 128), rgb(0, 217, 255), rgb(255, 0, 76), rgb(238, 152, 130), hotpink
+  );
+  background-size: 600% 600%;
+
+  filter: blur(8px);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+border-bottom: solid 3px rgb(255, 255, 255) ;
+  z-index: -1;   /* 🔥 THIS IS THE IMPORTANT PART */
+  pointer-events: none;
+
+  animation: glowing 15s linear infinite;
+}
+
+/* Show glow on hover */
+.product-containers .add-to-cart-buttons:hover::before {
+  opacity: 1;
+}
+
+/* Moving animation */
+@keyframes glowing {
+  0% { background-position: 0% 400%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 400%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+

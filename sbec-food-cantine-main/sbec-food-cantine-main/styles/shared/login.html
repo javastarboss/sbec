@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SBEC Login</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  
+
+
+<h1 id="loading-screen">
+  <img class="head" src="images1/iconss/sbeclogo.png">
+  <span id="one">S</span>
+  <span id="two">B</span>
+  <span id="three">E</span>
+  <span id="four">C</span>
+  <div class="all" style="margin-left: 8px;"></div>
+  <span id="five">F</span>
+  <span id="six">O</span>
+  <span id="seven">O</span>
+  <span id="eight">D</span>
+  <div class="all" style="margin-left: 8px;"></div>
+  <span id="nine">C</span>
+  <span id="ten">A</span>
+  <span id="eleven">N</span>
+  <span id="twelive">T</span>
+  <span id="thirteen">I</span>
+  <span id="forteen">N</span>
+  <span id="fifteen">E</span>
+</h1>
+
+<style>
+  
+  #loading-screen {
+    position: fixed;
+    top: 0; bottom: 0; left:0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100%;
+    margin-top: 0;
+    color: white;
+    font-size: 2.8rem;
+    gap: 6px;
+    z-index: 88;
+  }
+
+
+  #loading-screen .all { width: 18px; display:inline-block; }
+
+  #loading-screen span {
+    display: inline-block;
+    animation: ripple 1.6s ease-in infinite;
+    animation-fill-mode: both; 
+  }
+
+  #loading-screen span:nth-of-type(1){ animation-delay: 0s; }
+  #loading-screen span:nth-of-type(2){ animation-delay: 0.1s; }
+  #loading-screen span:nth-of-type(3){ animation-delay: 0.2s; }
+  #loading-screen span:nth-of-type(4){ animation-delay: 0.3s; }
+  #loading-screen span:nth-of-type(5){ animation-delay: 0.4s; }
+  #loading-screen span:nth-of-type(6){ animation-delay: 0.5s; }
+  #loading-screen span:nth-of-type(7){ animation-delay: 0.6s; }
+  #loading-screen span:nth-of-type(8){ animation-delay: 0.7s; }
+  #loading-screen span:nth-of-type(9){ animation-delay: 0.8s; }
+  #loading-screen span:nth-of-type(10){ animation-delay: 0.9s; }
+  #loading-screen span:nth-of-type(11){ animation-delay: 1s; }
+  #loading-screen span:nth-of-type(12){ animation-delay: 1.1s; }
+  #loading-screen span:nth-of-type(13){ animation-delay: 1.2s; }
+  #loading-screen span:nth-of-type(14){ animation-delay: 1.3s; }
+  #loading-screen span:nth-of-type(15){ animation-delay: 1.4s; }
+  #loading-screen span:nth-of-type(16){ animation-delay: 1.5s; }
+
+  /* fixed keyframes: start/end at rest, peak in middle; color stops preserved-ish */
+  @keyframes ripple {
+    0% {
+      transform: translateY(1) scale(1.5);
+      color: rgb(255, 2, 2);
+    }
+    20% {
+      transform: translateY(-10px) scale(1.08);
+      color: rgb(255, 2, 2);
+    }
+    40% {
+      transform: translateY(0) scale(1.5);
+      color: rgb(2, 247, 255);
+    }
+    60% {
+      transform: translateY(-8px) scale(1.04);
+      color: blueviolet;
+    }
+    80% {
+      transform: translateY(0) scale(1);
+      color: yellow;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      color: bisque;
+    }
+  }
+
+
+    #error{
+position: absolute;
+align-items: center;
+font-size: 13px;
+text-align: center;
+justify-content: center;
+margin: auto;
+bottom: 13px;
+margin-left: -30px;
+font-weight: 900;
+    }
+   
+ 
+    
+    #robo{
+      position: fixed;
+      right: -500px;
+      scale: 0.88;
+      top: 60px;
+           
+    }.texts{
+position: absolute;
+right: 320px;
+z-index: 4;
+top:70px;
+color: #000000;
+font-size: 14px;
+font-weight: 900;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000000, #454546, rgb(138, 138, 138));
+  animation: infinite right animate;
+background-position: 100%;
+      color: white;
+      align-items: center;
+      justify-content: center;
+  position: relative;
+  text-align: center;
+    }
+    @keyframes animate{
+to{
+  background-position: 300%;
+}
+    }
+    .login-container {
+     position: absolute;
+      background:linear-gradient(to right, black, rgb(75, 75, 75), rgb(175, 174, 174)) ;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      left: 350px;
+      top: 30px;
+      padding: 20px;
+    box-shadow: 0 30px 30px black;
+      padding: 160px 70px;
+border-radius: 20px;
+scale: 0.9;
+z-index: 9;
+
+    }
+    .im{
+      z-index: 2;
+      top: -20px;
+       right:  270px;
+      position: fixed;
+      width: 280px
+    }
+    .an{
+  text-decoration: none;
+  color: #000000;
+}.an:hover{
+  color:rgb(255, 255, 255);
+}
+    .email{
+      margin-bottom: 40px
+    }
+    h2 {
+      box-shadow: 0 30px 30px black;
+      font-size: 20px;
+    position: absolute;
+      padding: 5px;
+      border-radius: 30px;
+   top: 30px;
+   left: 60px;
+ background:linear-gradient(to right, black, rgb(75, 75, 75), rgb(192, 192, 192)) ;;
+      color: #fffafa;
+    }
+    input {
+      box-shadow: 0 30px 30px black;
+      padding: 15px;
+    }
+    button{
+        border-bottom: solid 2px white;
+       box-shadow: 0 30px 30px black;
+justify-content: space-between;
+      background:linear-gradient(to right, black, rgb(75, 75, 75), rgb(175, 174, 174)) ;
+     border: none;
+     border-radius: 10px;
+     padding: 10px 20px;
+     transition: transform 0.15s ease-in ;
+    }
+    button:hover {
+     
+     transform: scale(0.8);
+}button:active{
+opacity: 0.5;
+}#loginBtn{
+      position: absolute;
+      bottom: 80px;
+      right: 60px;
+        border-bottom: solid 2px rgb(185, 31, 31);
+    }#signBtn{
+       position: absolute;
+         border-bottom: solid 2px white;
+      bottom: 80px;
+      left: 60px;
+    }.text{
+ margin-bottom: 20px;
+      margin-right: 120px;
+      font-size: 18px;
+    }.text-e{
+      font-size: 18px;
+      margin-right: 155px;
+     margin-bottom: 20px;
+    }.title{
+      position: absolute;
+      font-family: arial;
+      font-weight: 800;
+     left: 400px;
+     margin-bottom: -30px;
+    }
+    
+    
+    .king.add{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class='all' id="king" style="display: none;">
+  <div class="title"  data-aos="zoom-in" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="300"
+    data-aos-duration="1200"
+    data-aos-easing="ease">Login | SignUp, to get started</div>
+  <div class="login-container" data-aos="zoom-in" data-aos="fade-up"
+    data-aos-offset="500"
+    data-aos-delay="500"
+    data-aos-duration="1500"
+    data-aos-easing="ease">
+    <h2 id="form-title" data-aos="fade-down" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="1000"
+    data-aos-duration="1200"
+    data-aos-easing="ease-in-out">Fill in your information</h2>
+    <div class='email'  data-aos="fade-right" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="1600"
+    data-aos-duration="1200"
+    data-aos-easing="ease">
+      <div class="text-e">Email</div>
+      <input type="email" id="email" placeholder="Email">
+    </div>
+      <div class="password" data-aos="fade-right" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="1600"
+    data-aos-duration="1200"
+    data-aos-easing="ease">
+        <div class="text">Password</div>
+    <input type="password" id="password" placeholder="Password">
+  </div>
+  
+   <div class="btn" 
+     data-aos="fade"
+     data-aos-offset="100"
+     data-aos-delay="2000"
+     data-aos-duration="1200"
+     data-aos-easing="ease-in-out">
+  <button id="loginBtn" onclick="signin()">Log In</button>
+  <button id="signBtn" onclick="signup()">Sign Up</button>
+</div>
+
+<label data-aos="fade-down"
+    data-aos-offset="100"
+    data-aos-delay="2500"
+    data-aos-duration="1200"
+    data-aos-easing="ease"><p   id="error">Personal Project By<a class='an' href="info.html">(EbrimaLaminDampha)</a></p></label>
+  </div>
+  <div data-aos="fade-in"
+    data-aos-offset="100"
+    data-aos-delay="2500"
+    data-aos-duration="3000"
+    data-aos-easing="ease" class="main-texts"  style="position: relative;"><div class="texts">Hey there, Im Bun bot<br> login/signup<br>and lets dive in</div>
+<img data-aos="fade-in"
+    data-aos-offset="100"
+    data-aos-delay="2500"
+    data-aos-duration="3000"
+    data-aos-easing="ease" src="media/vecteezy_speech-bubble-talk-bubble-chat-bubble-icon-png-transparent_9664092.png" class='im'alt=""></div>
+<spline-viewer data-aos="fade-in"
+    data-aos-offset="100"
+    data-aos-delay="2500"
+    data-aos-duration="3000"
+    data-aos-easing="ease" id="robo"  url="https://prod.spline.design/sZZTdgQCu63AkyS9/scene.splinecode"></spline-viewer>
+
+</div>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="module">
+  // -- imports must be first in a module
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword
+  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+  import {
+    getFirestore,
+    doc,
+    setDoc,
+    serverTimestamp
+  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+
+
+ 
+  const firebaseConfig = {
+    apiKey: "AIzaSyAgcibxEec8dwJb4TZuQrmeoUM3pjylrBk",
+    authDomain: "food-canteen-app-77e31.firebaseapp.com",
+    projectId: "food-canteen-app-77e31"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const store = getFirestore(app);
+
+
+  window.signup = async () => {
+    const email = (document.getElementById("email").value || "").trim();
+    const password = (document.getElementById("password").value || "");
+    if (!email || !password) {
+      alert("Please provide email and password.");
+      return;
+    }
+
+    try {
+   const user = auth.currentUser
+      const userCred = await createUserWithEmailAndPassword(auth, email, password);
+      const ref = doc(store, 'users', userCred.user.uid);
+if(user){
+  hideLoading()
+}
+    
+      await setDoc(ref, {
+        email: email,
+        money: 1000,
+        cart: [],
+        createdAt: serverTimestamp()
+      });
+
+   
+      window.location.href = 'sbec.html';
+    } catch (err) {
+      alert(err.message || "Signup failed");
+      console.error("signup error", err);
+    }
+  };
+
+
+  window.signin = async () => {
+    const email = (document.getElementById("email").value || "").trim();
+    const password = (document.getElementById("password").value || "");
+    if (!email || !password) {
+      alert("Please provide email and password.");
+      return;
+    }
+
+    try {
+    
+      await signInWithEmailAndPassword(auth, email, password);
+      
+      window.location.href = 'sbec.html';
+    } catch (err) {
+      alert(err.message || "Sign in failed");
+      console.error("signin error", err);
+    }
+  };
+document.addEventListener('DOMContentLoaded', () => 
+
+setTimeout( ()=>{
+const all = document.getElementById('king')
+if(all){all.style.display=''
+  all.classList.add('.add')
+   AOS.init();
+
+}
+}, 3000))
+
+
+
+function hideLoading(){
+ setTimeout(()=>{
+const loader = document.getElementById("loading-screen")
+  if(loader) {loader.style.display = "none";
+    loader.classList.add('hidden');
+    setTimeout(()=> loader.remove(), 300)
+  }
+ }, 3000) 
+
+}
+hideLoading()
+</script>
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
+
+
+</body>
+</html>

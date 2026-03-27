@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+<title>SBEC Login</title>
+   <link rel="icon" href="images1/iconss/sbeclogo.png" type="image/png">
+  <link rel="fi" href="images1/iconss/sbeclogo.png" type="image/png">
+
+ <meta name ="viewport"
+content="width=device-width, initial-scale=1">
+<style>
+ 
+  #loading-screen {
+     position: fixed;
+    top: 0; bottom: 0; left:0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  rgb(1, 0, 2);
+    height: 100%;
+    margin-top: 0;
+    color: white;
+    font-size: 2.8rem;
+    gap: 6px;
+    z-index: 88;
+  }
+
+
+  #loading-screen .all { width: 18px; display:inline-block; }
+
+  #loading-screen span {
+    display: inline-block;
+    animation: ripple 1.6s ease-in infinite;
+    animation-fill-mode: both; 
+  }
+
+  #loading-screen span:nth-of-type(1){ animation-delay: 0s; }
+  #loading-screen span:nth-of-type(2){ animation-delay: 0.1s; }
+  #loading-screen span:nth-of-type(3){ animation-delay: 0.2s; }
+  #loading-screen span:nth-of-type(4){ animation-delay: 0.3s; }
+  #loading-screen span:nth-of-type(5){ animation-delay: 0.4s; }
+  #loading-screen span:nth-of-type(6){ animation-delay: 0.5s; }
+  #loading-screen span:nth-of-type(7){ animation-delay: 0.6s; }
+  #loading-screen span:nth-of-type(8){ animation-delay: 0.7s; }
+  #loading-screen span:nth-of-type(9){ animation-delay: 0.8s; }
+  #loading-screen span:nth-of-type(10){ animation-delay: 0.9s; }
+  #loading-screen span:nth-of-type(11){ animation-delay: 1s; }
+  #loading-screen span:nth-of-type(12){ animation-delay: 1.1s; }
+  #loading-screen span:nth-of-type(13){ animation-delay: 1.2s; }
+  #loading-screen span:nth-of-type(14){ animation-delay: 1.3s; }
+  #loading-screen span:nth-of-type(15){ animation-delay: 1.4s; }
+  #loading-screen span:nth-of-type(16){ animation-delay: 1.5s; }
+
+  /* fixed keyframes: start/end at rest, peak in middle; color stops preserved-ish */
+  @keyframes ripple {
+    0% {
+      transform: translateY(1) scale(1.5);
+      color: rgb(255, 2, 2);
+    }
+    20% {
+      transform: translateY(-10px) scale(1.08);
+      color: rgb(255, 2, 2);
+    }
+    40% {
+      transform: translateY(0) scale(1.5);
+      color: rgb(2, 247, 255);
+    }
+    60% {
+      transform: translateY(-8px) scale(1.04);
+      color: blueviolet;
+    }
+    80% {
+      transform: translateY(0) scale(1);
+      color: yellow;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      color: bisque;
+    }
+  }
+#head{
+  position: absolute;
+ top:100px;
+ left:0;
+ right:0;
+   align-items: center;
+    justify-content: center;
+ text-align: center;
+  margin-left: auto;
+  margin-right:auto
+}
+
+   
+   
+    
+    .im{
+      z-index: 2;
+      top: -20px;
+       right:  270px;
+      position: fixed;
+      width: 280px
+    }
+   
+    .king.add{
+      display: block;
+    }
+  </style>
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/pages/loginstyle.css">
+  </head>
+<body>
+<h1 
+ style="color: black; z-index: 99;" id="loading-screen">
+   <img  id="head" src="images1/iconss/sbeclogo.png">
+  <span id="one">S</span>
+  <span id="two">B</span>
+  <span id="three">E</span>
+  <span id="four">C</span>
+
+  <span id="five">F</span>
+  <span id="six">O</span>
+  <span id="seven">O</span>
+  <span id="eight">D</span>
+
+  <span id="nine">C</span>
+  <span id="ten">A</span>
+  <span id="eleven">N</span>
+  <span id="twelive">T</span>
+  <span id="thirteen">I</span>
+  <span id="forteen">N</span>
+  <span id="fifteen">E</span>
+  
+</h1>
+
+
+
+
+  <div id="king" class="main"> </div>
+  <header class="head" data-aos="zoom-in" data-aos-delay="100"
+     data-aos-offset="0" data-aos-duration="1200"   >LogIn | SignUp, to get started </header>
+ 
+
+
+
+    <div data-aos="zoom-in" data-aos-delay="400"
+     data-aos-offset="0" data-aos-duration="1200" class="main-container">
+      <div class="info"  data-aos="fade-down" data-aos-delay="1000"
+     data-aos-offset="0" data-aos-duration="1200">Fill in all ur infomations below </div>
+      <div data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200" class="email">Email</div>
+      <input data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200" style="border-radius: 10px;" type="email" id="email" placeholder="email" required>
+      <div data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200"  class="password">Password</div>
+<input data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200"  style="border-radius: 10px;"   type="password" id="password" placeholder="password" required>
+     
+      
+ <div data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200"  class="id">UserName</div>
+<input data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200"  style="border-radius: 10px;"   type="text" id="user" placeholder="!Only Put if signing up new" required>
+     
+
+ <div data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200"  class="id">UserId</div>
+<input data-aos="fade-right" data-aos-delay="1500"
+     data-aos-offset="0" data-aos-duration="1200"  style="border-radius: 10px;"   type="text" id="id" placeholder="!Only Put if signing up new" required>
+     
+
+
+    
+     
+<div data-aos="fade-up" data-aos-delay="2000"
+     data-aos-offset="0" data-aos-duration="1200"  class="buttons"><button class="sign" onclick="signIn()" style="  border-bottom: solid 2px white; ">Sign Up</button>
+<button class="log" onclick="logIn()" style="  border-bottom: solid 2px white;">Log In</button></div>
+
+<footer  data-aos="zoom-in"  data-aos-delay="2500"
+     data-aos-offset="0" data-aos-duration="1200" style=" font-size:12px; position :fixed;bottom: 12px; left: 20px;"><a class="flooter" href="info.html" >@Personal project By (Ebrima Lamin Dampha)</a></footer>
+    </div>
+   
+
+
+
+    
+   
+</script>
+
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+    import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+      apiKey: "AIzaSyAgcibxEec8dwJb4TZuQrmeoUM3pjylrBk",
+      authDomain: "food-canteen-app-77e31.firebaseapp.com",
+      projectId: "food-canteen-app-77e31"
+    };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const store = getFirestore(app)
+const auth = getAuth(app)
+window.signIn = async ()=>{
+  const email= document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const id = document.getElementById('id').value;
+  const name = document.getElementById('user').value
+  try {
+   
+ const info = await createUserWithEmailAndPassword(auth, email, password, id, name);
+ await setDoc(doc(store, 'users', info.user.uid),{
+email: email,
+id: id,
+name: name,
+money: 0
+
+ 
+ }) 
+  window.location.href = 'sbec.html'
+ }
+   
+  catch(error){
+    alert(error)
+  }
+}
+window.logIn = async ()=>{
+  const email= document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const id = document.getElementById('id').value;
+    const name = document.getElementById('user').value
+  try {
+    await signInWithEmailAndPassword(auth, email, password, id, name)
+    window.location.href = 'sbec.html';
+    const user = auth.currentUser;
+const people = doc(store, 'users', user.uid ) 
+  }catch(error){
+    alert(error.message)
+  }await createUserWithEmailAndPassword(auth, email, password, id, name)
+}
+  </script>
+
+<div data-aos="fade-zoom-in" data-aos-delay="3000"
+     data-aos-offset="0" data-aos-duration="3000" class="text">Hey there, im Bun Bot<br>Login/Signup<br>and Lets Dive in. </div>
+
+<img class="img" data-aos="zoom-in" data-aos-delay="2000"
+     data-aos-offset="0" data-aos-duration="2000" src="media/think.png"> 
+
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.51/build/spline-viewer.js"></script>
+<spline-viewer data-aos="fade-zoom-in" data-aos-delay="3000"
+     data-aos-offset="0" data-aos-duration="3000"  class="robot" url="https://prod.spline.design/VueT50awGrASZWEr/scene.splinecode"></spline-viewer>
+
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => 
+
+setTimeout( ()=>{
+const all = document.getElementById('king')
+if(all){all.style.display=''
+  all.classList.add('.add')
+   AOS.init();
+
+}
+}, 3000))
+
+
+
+
+
+function hideLoading(){
+ setTimeout(()=>{
+const loader = document.getElementById("loading-screen")
+  if(loader) {loader.style.display = "none";
+    loader.classList.add('hidden');
+    setTimeout(()=> loader.remove(), 300)
+  }
+ }, 3000) 
+
+}
+hideLoading()
+</script>
+
+    </body>
+
+</html>

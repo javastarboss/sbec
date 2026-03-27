@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <link rel="icon" href="images1/iconss/sbeclogo.png" type="image/png">
+
+<title>Check</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/pages/checkout/check.css">
+    <link rel="stylesheet" href="styles/pages/checkout/check-header.css">
+    <link rel="stylesheet" href="styles/shared/sbec-header.css">
+    
+    <!--<link rel="stylesheet" href="styles/shared/general.css">-->
+</head>
+<body>
+
+
+  <h1 id="loading-screen">
+  <img class="head" src="images1/iconss/sbeclogo.png">
+  <span id="one">S</span>
+  <span id="two">B</span>
+  <span id="three">E</span>
+  <span id="four">C</span>
+  <span id="five">F</span>
+  <span id="six">O</span>
+  <span id="seven">O</span>
+  <span id="eight">D</span>
+  <span id="nine">C</span>
+  <span id="ten">A</span>
+  <span id="eleven">N</span>
+  <span id="twelive">T</span>
+  <span id="thirteen">I</span>
+  <span id="forteen">N</span>
+  <span id="fifteen">E</span>
+</h1>
+
+<style>
+  .head{
+    position: absolute;
+    top:100px;
+  }
+  #loading-screen {
+    font-family: roboto;
+    position: fixed;
+    top: 0; bottom: 0; left:0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100%;
+    margin-top: 0;
+    color: white;
+    font-size: 2.5rem;
+    gap: 6px;
+    z-index: 88;
+  }@media(max-width: 550px){
+    #loading-screen{
+      font-size: 20px;
+      
+    }h1 span{
+      margin-top: -250px;
+
+    }
+  }@media(max-width: 400px){
+#loading-screen span{
+  margin-top: 20px;
+}
+}
+
+
+  #loading-screen .all { width: 18px; display:inline-block; }
+
+  #loading-screen span {
+    display: inline-block;
+    animation: ripple 1.6s ease-in infinite;
+    animation-fill-mode: both; 
+  }
+
+  #loading-screen span:nth-of-type(1){ animation-delay: 0s; }
+  #loading-screen span:nth-of-type(2){ animation-delay: 0.1s; }
+  #loading-screen span:nth-of-type(3){ animation-delay: 0.2s; }
+  #loading-screen span:nth-of-type(4){ animation-delay: 0.3s; }
+  #loading-screen span:nth-of-type(5){ animation-delay: 0.4s; }
+  #loading-screen span:nth-of-type(6){ animation-delay: 0.5s; }
+  #loading-screen span:nth-of-type(7){ animation-delay: 0.6s; }
+  #loading-screen span:nth-of-type(8){ animation-delay: 0.7s; }
+  #loading-screen span:nth-of-type(9){ animation-delay: 0.8s; }
+  #loading-screen span:nth-of-type(10){ animation-delay: 0.9s; }
+  #loading-screen span:nth-of-type(11){ animation-delay: 1s; }
+  #loading-screen span:nth-of-type(12){ animation-delay: 1.1s; }
+  #loading-screen span:nth-of-type(13){ animation-delay: 1.2s; }
+  #loading-screen span:nth-of-type(14){ animation-delay: 1.3s; }
+  #loading-screen span:nth-of-type(15){ animation-delay: 1.4s; }
+  #loading-screen span:nth-of-type(16){ animation-delay: 1.5s; }
+
+  /* fixed keyframes: start/end at rest, peak in middle; color stops preserved-ish */
+  @keyframes ripple {
+    0% {
+      transform: translateY(1) scale(1.5);
+      color: rgb(255, 2, 2);
+    }
+    20% {
+      transform: translateY(-10px) scale(1.08);
+      color: rgb(255, 2, 2);
+    }
+    40% {
+      transform: translateY(0) scale(1.5);
+      color: rgb(2, 247, 255);
+    }
+    60% {
+      transform: translateY(-8px) scale(1.04);
+      color: blueviolet;
+    }
+    80% {
+      transform: translateY(0) scale(1);
+      color: yellow;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      color: bisque;
+    }
+  }
+</style>
+
+<div class="check-header">
+<div class="header-content">
+<diV class="check-header-left">
+<a href="sbec.html">
+  <img   class=" logo"src="images1/iconss/sbeclogo.png">
+</a>
+</diV><!--3 end-->
+<div class="check-header-middle">
+Ordered (<a class="return-to-home-links"
+href="sbec.html"><span id="zero" style="z-index: 9999;">0</span>
+ </a>)
+<div class="tie" style=" left: 200px; margin-left: 50px;"><span id="text" style="font-size: 20px; color:rgb(35, 83, 212); font-weight: 800; top:50px;
+    z-index: 999; " > Common Tier</span>
+</div>
+
+
+</div><div class="check-header-right">
+
+<a href="foodguide.html"><button class="btn-top">Date Guide</button></a><!--4 end-->
+
+
+</div><!--5 end-->
+
+</div><!--2 end-->
+</div><!--1 end-->
+<div class="main">
+ 
+<div class="page-title">
+Order && History
+</div><!--2 end-->
+<div class="check-grid">
+<div class="order-summary ">
+<!--3 end-->
+<!--6 end-->
+<!--4 end-->
+
+
+</div>
+</div>
+</div><!--1 end-->
+<div class="alle"><div class="pay-container"><div class="payment-summary js-payment-summary">
+<div style="text-align: center; font-size: 30px; font-family: roboto; font-weight: 900; margin-top: -25px;"> No Order Detected </div>
+        </div></div></div>
+
+<script type="module" src="java/check.js"></script>
+</body>
+</html>

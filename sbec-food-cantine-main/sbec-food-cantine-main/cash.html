@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head><title>cash-system</title></head>
+  <link rel="stylesheet" href="styles/pages/cash.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+     <!--links--> 
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <body>
+<a href="sbec.html" class="button"><button>Go Back</button></a>
+
+<div class="main-h"><div class="title">Cash-Transfer-System</div></div>
+<div class="main-con"><div class="container"><div class="user-email">
+  <div class="email-text">Receiver's id</div>
+  <div><input type="text" id="email" placeholder="user id"></div>
+</div>
+
+<div class="containe"><div class="user-money">
+  <div class="money-text">Amount of money</div>
+  <div><input type="number" id="money" min="1" placeholder="money"></div>
+  <button id="send" class="send">Send Money</button></div>
+
+</div>
+</div>
+
+  <div id="sendMsg" aria-live="polite"></div></div>
+<script type="module" src="java/cash.js"></script>
+
+  </body>
+</html>

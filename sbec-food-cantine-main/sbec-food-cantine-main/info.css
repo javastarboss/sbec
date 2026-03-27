@@ -1,0 +1,669 @@
+/**{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+margin-left: 5px;
+  font-family: roboto;
+  margin-right: 10px;
+}
+
+
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+height: 100vh;
+
+  background-color: black;
+  color:
+  rgb(255, 255, 255);
+} header{
+  margin-top: 20px;
+  padding: fixed;
+  top: 0;
+  left:0;
+
+  width: 100%;
+  padding: 1rem 17%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+.logo{
+   font-size: 4rem;
+  color: rgb(255, 196, 0);
+font-weight: 800;
+cursor: pointer;
+transition: 0.5s ease;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+nav a{
+    font-size: 1.8rem;
+  color: rgb(238, 255, 0);
+margin-left: 10rem;
+font-weight: 600;
+transition: 0.3s ease;
+
+border-bottom: 3px solid rgb(255, 230, 0);;
+}nav a:hover, nav a:active{
+  color: rgb(121, 109, 5);;
+  border-bottom: 3px solid rgb(209, 190, 19);
+}
+
+section{
+   min-height: 100vh;
+
+padding: 5rem 9% 5rem;
+
+}.home {
+ display: flex;
+  justify-content: center;
+bottom: 0;
+  align-items: center;
+    gap: 8rem;
+    background-color: rgb(0, 0, 0);
+    color: black;
+}.home .home-content h1{
+  font-size: 6rem;
+  font-weight: 700;
+line-height: 1.8;
+color: black;
+}span{
+  color:rgb(255, 230, 2)
+}.home-content h3 {
+  font-size: 4rem;
+  z-index: 99;
+
+  margin-bottom: 1rem;
+  font-weight: 700;
+}.home-image{
+  border-radius: 50%;
+}.home-image img{
+  position: relative;
+width: 27vw;
+border-radius: 50%;
+box-shadow: 0 0 55px blue;
+cursor: pointer;
+transition: 0.2s linear;
+}.home-image img{
+font-size: 1.8rem;
+font-weight: 500;
+}
+.icon img {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+width: 6rem;
+color: yellow;
+height :6rem;
+background-color: transparent;
+  border: 0.2px solid rgb(255, 230, 2);
+  font-size: 2rem;
+border-radius: 50%;
+margin: 3rem 1.5rem 3rem;
+transition: 0.3s ease;
+
+}
+.icon img:hover{
+  color: rgb(0, 0, 0);
+  transform: scale(1.3) translateY(-5px);
+  background-color: yellow;
+  box-shadow: 0 0 25px yellow;
+}
+.ig{
+  position: absolute;
+margin-top: -65px;
+color: yellow;
+font-weight: 900;
+font-size: 20px;
+margin-left: 90px;
+ 
+}
+.typing{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}.typing span{
+  position: relative;
+}
+
+.typing span::before{
+  content: '';
+  color: yellow;
+  animation: words 20s infinite;
+}.typing span::after{
+  content: '';
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width : calc(100% + 8px);
+height: 100%;
+border-left: 3px solid black;
+animation: cursor 0.6s infinite;
+}
+@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}
+@keyframes words{
+  0%, 20%{
+    content: 'A Student';
+  }21%, 40%{
+    content:'A Baca Fan' ;
+  }41%, 60%{
+content: 'A Buissiness Maniac';
+  }
+  61%, 80%{
+    content: 'A Baller';
+  }81%, 100%{
+    content: 'Aura it self';
+  }
+}@media (max-width:1000px){
+  .home{
+    gap: 4rem
+  }
+}@media(max-width:995px){
+    .home{
+      flex-direction: column;
+      margin: 5rem 4rem;
+    }.home .home-content h3{
+      font-size: 5rem;
+    }.home-image img{
+      width:50vh ;
+      margin-top: 4rem;
+    }section{
+      padding-bottom: 0px;
+    }
+  }
+  p {
+ font-size: 27px;
+  font-weight: 600;
+  min-width: 280px;
+  }
+  p span{
+  position: relative;
+}
+
+p span::before{
+  content: '';
+  color: rgb(238, 255, 0);
+  animation: word 30s infinite;
+}p span::after{
+  content: '';
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width : calc(100% + 8px);
+height: 20%;
+border-left: 3px solid black;
+animation: cursor 0.6s infinite;
+}
+@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}
+@keyframes word{
+  0%, 40%{
+    content:"I'm a 15 year old learning how to code, in hope of building my own successful app and turning it into a buisness one day. leaning how to code is actually tuff at the start but eventually it would become a habit, that u cant stop enjoying unless u stop." ;
+  }41%, 70%{
+content: "J'ai 15 ans et j'apprends à coder, dans l'espoir de créer ma propre application à succès et d'en faire un jour une entreprise. apprendre à coder est en fait difficile au début, mais cela finira par devenir une habitude, que vous ne pouvez pas arrêter d'apprécier à moins que vous n'arrêtiez"
+;
+  }
+  71%, 100%{
+    content: "عمري 15 عامًا أتعلم كيفية البرمجة، على أمل إنشاء تطبيقي الناجح وتحويله إلى عمل تجاري في يوم من الأيام. إن الميل إلى كيفية البرمجة هو في الواقع أمر صعب في البداية ولكن في النهاية سيصبح عادة، ولن تتمكن من التوقف عن الاستمتاع إلا إذا توقفت";
+  }
+}.typing {
+   font-size: 6rem;
+  font-weight: 600;
+  min-width: 280px;
+  }
+ .typing  .spans{
+  z-index: 99;
+  position: relative;
+}
+
+ .typing .spans::before{
+  content: '';
+  color: rgb(0, 255, 221);
+  animation: wor 15s infinite;
+}.spans::after{
+  content: '';
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width : calc(100% + 8px);
+  color: aqua;
+height: 20%;
+border-left: 3px solid black;
+animation: curso 0.6s infinite;
+}
+@keyframes curso{
+  to{
+    border-left: 3px solid;
+  }
+}
+@keyframes wor{
+  0%, 40%{
+    content:"Challenges" ;
+    color: aqua;
+  }41%, 70%{
+content: "Errors";
+color: rgb(241, 1, 141)
+;
+  }
+  71%, 100%{
+    content: "Break-Throughs";
+  color: yellow;}
+}
+
+.type{
+  z-index: 99;
+ font-size: 27px;
+  font-weight: 600;
+  min-width: 280px;
+  }
+ .type  .span{
+  position: relative;
+  z-index: 99;
+}
+
+ .type .span::before{
+  content: '';
+  color: rgb(8, 239, 255);
+  animation: wo 30s infinite;
+}.span::after{
+  content: '';
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width : calc(100% + 8px);
+height: 20%;
+color: blue;
+border-left: 3px solid black;
+animation: curs 0.6s infinite;
+}
+@keyframes curs{
+  to{
+    border-left: 3px solid;
+  }
+}
+@keyframes wo{
+  0%, 40%{
+    content:"honestly, i feel overwhelhmed while coding in most cases but it taught me alot. if i were to quit while on the journey, u wont be looking at this right now. failed-codes, break-throughs, constant errors are all part of the journey. so stay strong, cuz no one knows what infront of u as much as u do. so stay strong(dont be the change be part or lead the change)" ;
+  }41%, 70%{
+content: "Honnêtement, je me sens dépassé lors du codage dans la plupart des cas, mais je m'ai beaucoup appris. si je devais arrêter pendant le voyage, vous ne regarderez pas ça pour le moment. les codes défaillants, les percées, les erreurs constantes font tous partie du voyage. alors reste fort, parce que personne ne sait autant que toi ce qui se trouve devant toi. alors reste fort (ne sois pas le changement, participe ou dirige le changement)"
+;
+  }
+  71%, 100%{
+    content: "بصراحة، أشعر بالإرهاق أثناء البرمجة في معظم الحالات، لكنني علمتني الكثير. إذا كنت سأستقيل أثناء الرحلة، فلن تنظر إلى هذا الآن. تعتبر الرموز الفاشلة والاختراقات والأخطاء المستمرة جزءًا من الرحلة. لذا كن قوياً، لأنه لا أحد يعرف ما الذي أمامك بقدر ما تعرفه أنت. لذا كن قوياً (لا تكن أنت التغيير، كن جزءاً من التغيير أو تقوده)"}
+}@media(max-width: 899px){}
+
+
+/* ---------- FULL MERGED / CLEANED CSS ---------- */
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+font-weight: 1900;
+
+}.he{
+    width: 21vw;
+    border-radius: 200px;
+box-shadow: 0px 0px 50px rgb(255, 230, 0)
+  }
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: rgb(255, 255, 255);
+
+}
+
+
+:root {
+  --header-height: 7.5rem;
+  --accent: rgb(255, 154, 2);
+  --accent-strong: rgb(255, 217, 2);
+}
+
+header {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 6%;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.65);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* logo */
+.logo {
+  font-size: 3rem;
+  color: rgb(255, 115, 0);
+  z-index: 4;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.logo:hover { transform: scale(1.05); }
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rem;
+}
+nav a {
+  font-size: 1.8rem;
+  color: rgb(255, 123, 0);
+  background-color: transparent;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 900;
+  border-bottom: 3px solid var(--accent);
+  transition: color .25s, border-color .25s, transform .15s;
+}
+nav a:hover,
+nav a:active {
+  color: var(--accent-strong);
+  border-bottom: 3px solid var(--accent-strong);
+  transform: translateY(-2px);
+}
+
+
+section {
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: 500px;
+}
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 0;
+ 
+}
+.home .home-content h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  z-index: 99;
+
+}
+span { color: var(--accent); }
+
+.home-image { border-radius: 50%; }
+.home-image img {
+  position: relative;
+  width: 27vw;
+  border-radius: 50%;
+  box-shadow: 0 0 55px rgb(255, 81, 0);
+  cursor: pointer;
+ 
+  margin-right: 30PX;
+  transition: transform .2s linear, box-shadow .2s;
+}
+.home-image img:hover { transform: scale(1.02); }
+
+/* icons */
+.icon img {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  z-index: 4;
+  height: 6rem;
+  background-color: transparent;
+  border: 0.2px solid var(--accent);
+  border-radius: 50%;
+  margin: 3rem 1.5rem;
+  transition: transform .3s, box-shadow .3s;
+}
+.icon img:hover {
+  transform: scale(1.3) translateY(-5px);
+  background-color: var(--accent);
+  box-shadow: 0 0 25px var(--accent);
+  color: #000;
+}
+.brands{
+  scale: 1.3;
+}.ig{
+  scale: 1.3;
+
+}
+
+.ig {
+  position: absolute;
+  margin-top: -65px;
+  color: rgb(255, 145, 0);
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 90px;
+}
+
+
+.typing {
+  font-size: 8.4rem;
+  font-weight: 900;
+  min-width: 280px;
+  position: relative;
+
+}
+.typing span { position: relative; display: inline-block; }
+
+
+.typing span::before {
+  content: '';
+  color: yellow;
+  animation: words 20s infinite;
+}
+.typing span::after {
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  animation: cursor 0.6s infinite;
+}
+
+/* cursor & words keyframes (only one cursor animation defined) */
+@keyframes cursor {
+  0% { border-left-color: transparent; }
+  50% { border-left-color: black; }
+  100% { border-left-color: transparent; }
+}
+@keyframes words {
+  0%, 20% { content: 'A Student'; }
+  21%, 40% { content: 'A Barça Fan'; }
+  41%, 60% { content: 'A Business enthusiast'; }
+  61%, 80% { content: 'A Baller'; }
+  81%, 100% { content: 'Aura it self'; }
+}
+
+
+.type {
+  z-index: 99;
+  font-size: 2.7rem;
+  font-weight: 900;
+  max-width: 1100px;
+}
+.type .span { position: relative; }
+.type .span::before {
+  content: '';
+  color: rgb(255, 196, 0);
+  animation: wo 30s infinite;
+  font-weight: 900;
+}
+.type .span::after {
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 20%;
+  color: rgb(255, 230, 0);
+  border-left: 3px solid black;
+  animation: curs 0.6s infinite;
+}
+@keyframes curs { to { border-left: 3px solid; } }
+@keyframes wo {
+  0%,40% { content: "honestly, i feel overwhelhmed while coding in most cases but it taught me alot. if i were to quit while on the journey, u wont be looking at this right now. failed-codes, break-throughs, constant errors are all part of the journey. so stay strong, cuz no one knows what infront of u as much as u do. so stay strong(dont be the change be part or lead the change)"; }
+  41%,70% { content: "Honnêtement, je me sens dépassé lors du codage dans la plupart des cas, mais je m'ai beaucoup appris. si je devais arrêter pendant le voyage, vous ne regarderez pas ça pour le moment. les codes défaillants, les percées, les erreurs constantes font tous partie du voyage. alors reste fort, parce que personne ne sait autant que toi ce qui se trouve devant toi. alors reste fort (ne sois pas le changement, participe ou dirige le changement)"; }
+  71%,100% { content: "بصراحة، أشعر بالإرهاق أثناء البرمجة في معظم الحالات، لكنني علمتني الكثير. إذا كنت سأستقيل أثناء الرحلة، فلن تنظر إلى هذا الآن. تعتبر الرموز الفاشلة والاختراقات والأخطاء المستمرة جزءًا من الرحلة. لذا كن قوياً، لأنه لا أحد يعرف ما الذي أمامك بقدر ما تعرفه أنت. لذا كن قوياً (لا تكن أنت التغيير، كن جزءاً من التغيير أو تقوده)"; }
+}
+
+
+.typing { font-size: 6rem; }
+.typing .spans { z-index: 99; position: relative; }
+.typing .spans::before { content: ''; color: rgb(0,255,221); animation: wor 15s infinite; }
+.typing .spans::after { content: ''; position: absolute; width: calc(100% + 8px); height: 20%; border-left: 3px solid black; animation: curso 0.6s infinite; }
+@keyframes curso { to { border-left: 3px solid; } }
+@keyframes wor {
+  0%,40% { content: "Challenges"; color: aqua; }
+  41%,70% { content: "Errors"; color: rgb(241,1,141); }
+  71%,100% { content: "Break-Throughs"; color: yellow; }
+}
+
+
+p { font-size: 2.7rem; font-weight: 600; min-width: 280px; max-width: 1100px; }
+p span::before {
+  content: '';
+  color: rgb(238,255,0);
+  animation: word 30s infinite;
+}
+P span { z-index: 99; position: relative; }
+p span::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 20%;
+  border-left: 3px solid black;
+  animation: cursor 0.6s infinite;
+}
+@keyframes word {
+  0%,40% { content: "I'm a 15 year old learning how to code, in hope of building my own successful app and turning it into a buisness one day. learning how to code is actually tuff at the start but eventually it would become a habit, that u cant stop enjoying unless u stop."; }
+  41%,70% { content: "J'ai 15 ans et j'apprends à coder, dans l'espoir de créer ma propre application à succès et d'en faire un jour une entreprise. apprendre à coder est en fait difficile au début, mais cela finira par devenir une habitude, que vous ne pouvez pas arrêter d'apprécier à moins que vous n'arrêtiez"; }
+  71%,100% { content: "عمري 15 عامًا أتعلم كيفية البرمجة، على أمل إنشاء تطبيقي الناجح وتحويله إلى عمل تجاري في يوم من الأيام. إن الميل إلى كيفية البرمجة هو في الواقع أمر صعب في البداية ولكن في النهاية سيصبح عادة، ولن تتمكن من التوقف عن الاستمتاع إلا إذا توقفت"; }
+}
+
+
+.im { z-index: 2; top: -20px; right: 250px; position: fixed; width: 280px; }
+
+
+@media (max-width: 995px) {
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}.ig{
+left: 180px;
+}
+
+  header { flex-direction: column; height: auto; padding: 1rem 4%; }
+  nav { flex-wrap: wrap; gap: 1.2rem; margin-top: 1rem; }
+  nav a { font-size: 1.5rem; padding: 0.5rem 1rem; }
+  .home { flex-direction: column; gap: 4rem; text-align: center; }
+  .home .home-content h1 { font-size: 5rem; }
+  .home-image img { width: 50vh; margin-top: 4rem; }
+  section { padding-bottom: 0; }
+}
+
+@media (max-width: 415px) {
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ 
+}
+  html { font-size: 55%; }
+  header { padding: 1rem 3%; }
+  nav { gap: 0.8rem; }
+  nav a { font-size: 1.3rem; padding: 0.4rem 0.8rem; }
+  .home .home-content h1 { font-size: 3.8rem; }
+  .typing { font-size: 2.6rem; }
+  .icon img { width: 5rem; height: 5rem; }
+}
+
+@media (max-width: 370px) {
+  nav { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+  nav a { font-size: 1.2rem; padding: 0.3rem 0.6rem; }
+  .logo { font-size: 2.5rem; }
+  .home .home-content h1 { font-size: 3.4rem; }
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}@media (max-width: 500px) {
+  .home-image{
+    scale: 0.7;
+  }nav{
+   
+  }p{
+    font-size: 18px;
+  }.type{
+    font-size: 18px;
+  }.ig{
+    left: 0;
+  }
+}
+ 
+@media (max-width: 425px) {
+  .brands{
+    left: 20px;
+    
+  }.ig{
+    scale: 1.2;
+
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .brands{
+    left: 60px;
+    scale:1.2
+  }
+}
+
+
+

@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Pop');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: none;
+outline: none;
+font-family: 'Poppins', sans-serif;
+
+
+}html{
+  font-size:62.5% ;
+  scroll-behavior: smooth;
+    overflow-x: hidden; 
+}body{
+width: 100%;
+height: 100vh;
+background-color: black;
+color: rgb(73, 72, 4);
+  overflow-x: hidden; 
+}header{
+  margin-top: 20px;
+  padding: fixed;
+  top: 0;
+  left:0;
+
+  width: 100%;
+  padding: 1rem 17%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+
+  font-size: 4rem;
+  color: rgb(255, 196, 0);
+font-weight: 800;
+cursor: pointer;
+transition: 0.5s ease;
+}.logo:hover{
+  transform: scale(1.1);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rem;
+}
+nav a {
+  font-size: 1.8rem;
+  color: rgb(255, 208, 0);
+  background-color: transparent;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 500;
+border-bottom: yellow solid 1px;
+  transition: color .25s, border-color .25s, transform .15s;
+}
+nav a:hover,
+nav a:active {
+  color: var(--accent-strong);
+  border-bottom: 3px solid var(--accent-strong);
+  transform: translateY(-2px);
+}section{
+  min-height: 100vh;
+padding: 5rem 9% 5rem;
+}
+.home{
+  display: flex;
+  justify-content: center;
+bottom: 0;
+  align-items: center;
+    gap: 8rem;
+    background-color: rgb(0, 0, 0);
+    color: black;
+}.home .home-content h1{
+  font-size: 6rem;
+  font-weight: 700;
+line-height: 1.8;
+color: black;
+}span{
+  color:rgb(247, 243, 17);
+}.home-content h3{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+ 
+}.home-img #hello{
+  box-shadow:0 1.5px 50px rgb(251, 255, 0);
+ 
+}.home-img #me{
+  box-shadow: 17px 1.5px 15px rgb(255, 255, 255)
+}.home-img img{
+  border-radius: 50% ;
+;
+}.home-img img{
+  position: relative;
+  width: 25vw;
+
+}.home-img img:hover{
+font-size: 1.8rem;
+font-weight: 500;
+
+}.brands {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(206, 175, 39);
+  border: 0.2rem solid rgb(255, 251, 0);
+font-size: 2rem;
+border-radius: 50%;
+margin: 3rem 1.5rem 3rem 0;
+transition: 0.3s ease;
+color: rgb(228, 196, 20);
+}.brands:hover{
+color: rgb(61, 49, 49);
+transform: scale(1.3)translate(-2.5px);
+background-color: rgb(255, 230, 0);
+box-shadow: 0 0 40px rgb(236, 224, 46);
+}
+.typing{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}.typing span{
+  position: relative;
+
+}.typing span::before{
+  content: "a Software Developer";
+  color: rgb(238, 255, 0);
+  animation: words 10s infinite;
+
+}
+.typing span::after{
+  content: "";
+  
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black ;
+  right: -8;
+  animation: cursor 0.6s infinite ;
+}
+@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}@keyframes words{
+  0%, 20%{
+    content: "A Software Developer";
+   
+  }21%, 40%{
+    content: "An Artist ";
+   
+  }41%, 60%{
+    content: "A Designer";
+
+  }61%, 80%{
+    content: "A Student";
+   
+  }81%, 100%{
+    content: "Aura itself";
+   
+  }
+}@media(max-width: 995px){
+.home{
+  gap: 4rem;
+}
+
+nav a{
+  
+margin-left: 6.2rem;
+ 
+ }
+}
+@media(max-width: 995px){
+
+  nav a{
+  gap: 0;
+  scale: 0.5;
+  }
+}
+
+
+@media(max-width: 995px){
+  .home{
+    flex-direction: column;
+    margin: 5rem 4rem;
+  }.home .home-content h3{
+    font-size: 4.5rem;
+  }.home-content h1{
+    font-size: 5rem;
+  }.home-img img{
+    margin-top: 2rem;
+  }}
+.span{ 
+   font-size: 22px;
+  font-weight: 600;
+   min-width: 280px;
+  
+}.span span{
+ position: relative; 
+color: rgb(0, 0, 0);
+}.span span::before{
+  content: "15  years old, learning software engineering, i aspire to become a real entrepreneur build my own app, which i believe would be a great idea. Im not just here to code — Im here to change something, even if I cant explain it all yet. Theres something about programming that calls to me, like a key waiting for the right hand. I didnt grow up around lines of code, but the moment I saw it, something clicked.";
+ color: rgb(177, 87, 2);
+  animation: wordss 30s infinite;
+}.span span::after{
+  content: "";
+  
+  position: absolute;
+  width: calc(100% + 5px);
+  height: 20%;
+  border-left: 2px solid rgb(197, 195, 195);
+right: -8;
+  animation: cursor 0.6s infinite;
+}@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}@keyframes wordss {
+  0%, 50%{
+    content: "15  years old, learning software engineering, i aspire to become a real entrepreneur build my own app, which i believe would be a great idea. I’m not just here to code — I’m here to change something, even if I can’t explain it all yet. There’s something about programming that calls to me, like a key waiting for the right hand. I didn’t grow up around lines of code, but the moment I saw it, something clicked. ";
+  }51%, 79%{
+    content: "Âgé de 15 ans, apprenant le génie logiciel, j'aspire à devenir un véritable entrepreneur et à créer ma propre application, ce qui, je pense, serait une excellente idée. Je ne suis pas seulement là pour coder – je suis là pour changer quelque chose, même si je ne peux pas encore tout expliquer. Il y a quelque chose dans la programmation qui m'interpelle, comme une clé attendant la main droite. Je n’ai pas grandi autour de lignes de code, mais dès que je l’ai vu, quelque chose a cliqué. "
+  }81%, 100%{
+    content: "عمري 15 عامًا، وأنا أتعلم هندسة البرمجيات، وأطمح لأن أصبح رائد أعمال حقيقيًا وأقوم ببناء تطبيقي الخاص، والذي أعتقد أنه سيكون فكرة رائعة. أنا لست هنا فقط للبرمجة - أنا هنا لتغيير شيء ما، حتى لو لم أتمكن من شرح كل شيء بعد. هناك شيء يتعلق بالبرمجة يناديني، مثل المفتاح الذي ينتظر اليد اليمنى. لم أكن نشأت حول سطور من التعليمات البرمجية، ولكن في اللحظة التي رأيتها، حدث شيء ما."
+  }
+  
+}.image{
+   position: relative;
+  width: 30vw;
+  border-radius: 50%;
+  left: 100px;
+ 
+}.typingg{
+  font-size: 3px;
+  font-weight: 600;
+  min-width: 280px;
+}.typingg span::before{
+content: "Yeah, I’ve had my moments. I’ve acted out. I’ve felt like I wasn’t even human sometimes — like I was breaking under the weight of something I couldn’t name. But I didn’t stay there. I learned to breathe through it. To hold that storm still. I’m not perfect, and I don’t want to be. I just want to grow.";
+animation:  wording 33s infinite;
+font-size: 22px;
+color: rgb(112, 4, 4);
+}.typingg span::after{
+  content: '';
+width: calc(100% + 5px);
+height: 20%;
+ border-left: 3px solid rgb(197, 195, 195);
+ animation: 0.6s cursor infinite;
+ color:rgb(0, 0, 0);
+}@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}@keyframes wording{
+  0%, 40%{
+    font-weight: 900;
+    content: "Tho my mentality is dark, ruthless and sometimes bothersome, i dont let it affect who i am. Yeah, I’ve had my moments. I’ve acted out. I’ve felt like I wasn’t even human sometimes — like I was breaking under the weight of something I couldn’t name. But I didn’t stay there. I learned to breathe through it. To hold that storm still. I’m not perfect, and I don’t want to be. I just want to grow.";
+  }41%, 70%{
+    content: "مع أن عقليتي مظلمة وقاسية ومزعجة أحيانًا، فلا أدع ذلك يؤثر على هويتي. نعم، لقد عشت لحظاتي. لقد تصرفت. لقد شعرت أحيانًا أنني لم أكن إنسانًا حتى، وكأنني كنت أتحطم تحت وطأة شيء لا أستطيع تسميته. لكنني لم أبق هناك. لقد تعلمت أن أتنفس من خلاله. لعقد تلك العاصفة لا يزال. أنا لست مثاليًا، ولا أريد أن أكون كذلك. أريد فقط أن أنمو. "
+  }71%, 100%{
+    content: "Même si ma mentalité est sombre, impitoyable et parfois gênante, je ne laisse pas cela affecter qui je suis. Ouais, j'ai eu mes moments. J'ai agi. J’ai parfois eu l’impression de ne même pas être humaine – comme si je cédais sous le poids de quelque chose que je ne pouvais pas nommer. Mais je n'y suis pas resté. J'ai appris à respirer grâce à ça. Pour retenir cette tempête. Je ne suis pas parfait et je ne veux pas l’être. Je veux juste grandir."
+  }}@media(max-width: 995px){
+.span span::before{
+  content: "15  years old, learning software engineering, i aspire to become a real entrepreneur build my own app, which i believe would be a great idea. Im not just here to code — Im here to change something, even if I cant explain it all yet. Theres something about programming that calls to me, like a key waiting for the right hand. I didnt grow up around lines of code, but the moment I saw it, something clicked.";
+  color: rgb(177, 87, 2);
+  animation: wordss 30s infinite;
+}
+  }
+  
+  .help{
+
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(116, 8, 8);
+  border: 0.2rem solid rgb(255, 0, 0);
+font-size: 2rem;
+border-radius: 50%;
+margin: 3rem 1.5rem 3rem 0;
+transition: 0.3s ease ;
+color: rgb(241, 237, 237);
+
+  }.help:hover{
+    color: rgb(168, 54, 54);
+transform: scale(1.3)translate(-2.5px);
+background-color: rgb(255, 0, 0);
+box-shadow: 0px 0px 25px rgb(255, 0, 0);
+content: "ig";
+  }.brands{
+  font-size: 50px;
+
+}.ig{
+  color: rgb(255, 208, 0);
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  position: absolute;
+left: 70px;
+bottom: 50px ;
+   box-shadow: 0px 0px 30px rgb(255, 230, 0);
+}.igg{
+color: rgb(248, 5, 5);
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  position: absolute;
+left: 70px;
+bottom: 50px ;
+
+  box-shadow: 0px 0px 25px rgb(255, 0, 0);
+}a{
+  position: relative;
+}.challenges{
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  
+}.meh{
+  position: absolute;
+left: 5px;
+}.homes{
+  position: absolute;
+  right: -12px;
+}#last-img{
+ box-shadow: 20px 0px 18px rgb(14, 1, 128);
+}.span1{
+  color:rgb(28, 73, 199) ;
+}.heal{
+  color:rgb(131, 1, 29) ;
+}
+  
+.typingq{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}.typingq span{
+  position: relative;
+
+}.typingq span::before{
+  content: "";
+  color: rgb(252, 252, 252);
+  animation: wordd 10s infinite;
+
+}
+.typingq span::after{
+  content: "";
+  
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid rgb(7, 164, 226); ;
+  right: -8;
+  animation: cursor 0.3s infinite ;
+  color:rgb(250, 250, 250);
+}
+@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}@keyframes wordd{
+  0%, 20%{
+    content: "Anger";
+    color: rgb(70, 161, 197);
+  }21%, 40%{
+    content: "Fraustration";
+    color: rgb(2, 110, 96);
+  }41%, 60%{
+    content: "Life questioning";
+ color: rgb(243, 5, 104);
+  }61%, 80%{
+    content: "Tiredness";
+    color: rgb(116, 11, 148);
+  }81%, 100%{
+    content: "Training";
+    color: rgb(13, 218, 201);
+  }} .rd{
+
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color:rgb(109, 112, 114);
+  border: 0.2rem solid rgb(230, 230, 230);
+font-size: 2rem;
+border-radius: 50%;
+margin: 3rem 1.5rem 3rem 0;
+transition: 0.3s ease ;
+color: rgb(2, 37, 51);
+  }.rd:hover{
+    color: rgb(252, 252, 252);
+transform: scale(1.3)translate(-2.5px);
+background-color: rgb(255, 255, 255);
+box-shadow: 0px 0px 25px rgb(255, 255, 255);
+content: "ig";
+  }.iggg{
+    color: rgb(252, 252, 252);
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  position: absolute;
+left: 70px;
+bottom: 50px ;
+box-shadow: 0px 0px 20px rgb(228, 228, 228);
+  }.spanish{
+  font-size: 3px;
+  font-weight: 600;
+  min-width: 280px;
+}.spanish span::before{
+content: "";
+animation:  wordingS 500s infinite;
+font-size: 22px;
+color: rgb(150, 146, 146);
+}.spanish span::after{
+  content: '';
+width: calc(100% + 5px);
+height: 100%;
+ border-left: 3px solid rgb(0, 0, 0);;
+ animation: 0.6s cursor infinite;
+ color:rgb(255, 253, 253);;
+}@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}@keyframes wordingS{
+  0%, 40%{
+    content: "The first time I started the idea of this web, I was excited😄, not only cuz it would be my very own project yet, but that it was solving something which excites🥳. So I started my journey, going through tutorial hell🤕 taking notes and building a lot of things to gain the knowledge of how things work🤓. But see, our generation with all these tools like chat gpt, gemini, grok etc make it easier, especially if you want your code to be explained and learn from your mistakes❌.I made tons of mistakes❌ when creating this, cuz I am not really much of a backend guy, which saves users logins🧑, money💰, likes😍 and etc. So that really bothered me cuz I find backend too boring, which is kinda fair and also stupid. But getting stuck because of a backend for a whole day, like even when I also tried putting it into chat gpt, it just fu$$%ed🤬 it up way more and I was frustrated and started thinking of giving up😞 on the idea💡. Until the following day, that stupid thing started working. Guess what it was? It was a F$$$$$$ng🤬 comment (/*) in the bottom. Even while typing this, I can't help but try to kill🔪🩸 that line of code";
+  }41%, 70%{
+    content: "La première fois que j'ai lancé l'idée de ce site Web, j'étais enthousiasmé😄, non seulement parce que ce serait mon propre projet, mais aussi parce qu'il résolvait quelque chose qui me passionnait🥳. J'ai donc commencé mon voyage en passant par l'enfer des tutoriels🤕, en prenant des notes et en construisant beaucoup de choses pour acquérir des connaissances sur le fonctionnement des choses🤓. Mais voyez, notre génération avec tous ces outils comme chat gpt, gemini, grok etc vous facilite la tâche, surtout si vous voulez que votre code soit expliqué et apprenne de vos erreurs❌.J'ai fait des tonnes d'erreurs❌ lors de la création de ceci, car je ne suis pas vraiment un gars du backend, ce qui permet aux utilisateurs d'économiser des connexions🧑, de l'argent💰, des likes😍 et etc. Donc cela m'a vraiment dérangé parce que je trouve le backend trop ennuyeux, ce qui est plutôt juste et aussi stupide. Mais rester coincé à cause d'un backend pendant une journée entière, comme même lorsque j'ai également essayé de le mettre dans le chat gpt, cela a juste fou$$%ed🤬 beaucoup plus et j'étais frustré et j'ai commencé à penser à abandonner😞 l'idée💡. Jusqu’au lendemain, cette stupide chose a commencé à fonctionner. Devinez ce que c'était ? C'était un commentaire F$$$$$$ng🤬 (/*) en bas. Même en écrivant ceci, je ne peux m'empêcher d'essayer de tuer🔪🩸 cette ligne de code "
+  }71%, 100%{
+    content: "في المرة الأولى التي بدأت فيها فكرة هذا الويب، كنت متحمسًا😄، ليس فقط لأنه سيكون مشروعي الخاص بعد، ولكنه كان يحل شيئًا مثيرًا🥳. لذلك بدأت رحلتي، حيث مررت بالجحيم التعليمي🤕، حيث قمت بتدوين الملاحظات وبناء الكثير من الأشياء لاكتساب المعرفة حول كيفية عمل الأشياء🤓. لكن كما ترى، جيلنا الذي لديه كل هذه الأدوات مثل chat gpt وgemini وgrok وما إلى ذلك يجعل الأمر أسهل، خاصة إذا كنت تريد شرح الكود الخاص بك والتعلم من أخطائك❌. لقد ارتكبت الكثير من الأخطاء❌ عند إنشاء هذا، لأنني لست من محبي الواجهة الخلفية، مما يوفر تسجيلات دخول المستخدمين🧑 والمال💰 والإعجابات😍 وما إلى ذلك. لذا فقد أزعجني ذلك حقًا لأنني أجد الواجهة الخلفية مملة للغاية، وهو أمر عادل إلى حد ما وغبي أيضًا. لكن أن أعلق بسبب الواجهة الخلفية لمدة يوم كامل، كما هو الحال عندما حاولت أيضًا وضعها في دردشة gpt، فقد أفسدت الأمر أكثر بكثير وشعرت بالإحباط وبدأت أفكر في التخلي😞 عن الفكرة💡. حتى اليوم التالي، بدأ هذا الشيء الغبي يعمل. خمن ماذا كان؟ لقد كان تعليقًا F$$$$$$ng🤬 (/*) في الأسفل. حتى أثناء كتابة هذا، لا يسعني إلا أن أحاول إيقاف هذا السطر من التعليمات البرمجية"
+  }} .spanis{
+  font-size: 3px;
+  font-weight: 600;
+  min-width: 280px;
+}.spanis span::before{
+content: "";
+animation:  wordi 40s infinite;
+font-size: 22px;
+color: rgb(139, 195, 233);
+}.spanis span::after{
+  
+  
+  content: "";
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black ;
+  right: -8;
+  animation: cursor 0.6s infinite ;
+  color: aqua;
+}@keyframes cursor{
+  to{
+    border-left: 3px solid;
+  }
+}@keyframes wordi{
+  0%, 40%{
+    content: "It's not guaranteed that I'll be here tomorrow. Life doesn’t come with any promises, and the truth is, anything can happen at any time. I try to keep that in the back of my mind—not to live in fear, but to stay aware of how unpredictable things really are. It’s easy to assume we have all the time in the world, but the reality is, we don’t know what the next hour might bring, let alone the next day. That’s why I try to make the most of today, to not put off the things that matter, and to remind myself that every moment counts, even the small ones. I try to keep that in mind — not to be dramatic, but just to remind myself to make the most of today while I still can";
+  }41%, 70%{
+    content: "Il n'est pas garanti que je serai là demain. La vie ne comporte aucune promesse et la vérité est que tout peut arriver à tout moment. J’essaie de garder cela à l’esprit – non pas pour vivre dans la peur, mais pour rester conscient de l’imprévisibilité des choses. Il est facile de supposer que nous avons tout le temps du monde, mais la réalité est que nous ne savons pas ce que la prochaine heure nous réserve, encore moins le lendemain. C’est pourquoi j’essaie de profiter au maximum de la journée, de ne pas retarder les choses qui comptent et de me rappeler que chaque instant compte, même les plus petits. J'essaie de garder cela à l'esprit - pas pour être dramatique, mais juste pour me rappeler de profiter au maximum de la journée tant que je le peux encore "
+  }71%, 100%{
+    content: "ليس من المضمون أن أكون هنا غدًا. الحياة لا تأتي مع أي وعود، والحقيقة هي أن أي شيء يمكن أن يحدث في أي وقت. أحاول أن أبقي ذلك في الجزء الخلفي من ذهني، ليس لكي أعيش في خوف، ولكن لأظل واعيًا بمدى عدم القدرة على التنبؤ بالأشياء حقًا. من السهل أن نفترض أن لدينا كل الوقت في العالم، ولكن الحقيقة هي أننا لا نعرف ما قد تحمله الساعة القادمة، ناهيك عن اليوم التالي. لهذا السبب أحاول تحقيق أقصى استفادة من اليوم، وعدم تأجيل الأشياء المهمة، وتذكير نفسي بأن كل لحظة لها أهمية، حتى الصغيرة منها. أحاول أن أضع ذلك في الاعتبار - ليس لأكون دراميًا، ولكن فقط لتذكير نفسي بتحقيق أقصى استفادة من اليوم بينما لا يزال بإمكاني ذلك"
+  }}.rdd{
+
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color:rgb(13, 56, 85);
+  border: 0.2rem solid rgb(6, 143, 255);
+font-size: 2rem;
+border-radius: 50%;
+margin: 3rem 1.5rem 3rem 0;
+transition: 0.3s ease ;
+color: rgb(2, 37, 51);
+  }.rdd:hover{
+    color: rgb(0, 140, 255);
+transform: scale(1.3)translate(-2.5px);
+background-color: rgb(0, 140, 255);
+box-shadow: 0px 0px 25px rgb(0, 38, 255);
+content: "ig";
+  }.igggg{
+    color: rgb(0, 81, 255);
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  position: absolute;
+left: 70px;
+bottom: 50px ;
+box-shadow: 0px 0px 20px rgb(0, 174, 255);
+  }@media(max-width: 995px){
+ .ig{color: rgb(255, 230, 2);
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  position: absolute;
+left: 70px;
+bottom: 50px ;
+   box-shadow: 0px 0px 30px rgb(255, 230, 0);}   
+  }.he{
+    width: 21vw;
+    border-radius: 200px;
+box-shadow: 0px 0px 50px rgb(255, 230, 0)
+  }#hee{
+    width: 21vw;
+    border-radius: 200px;
+box-shadow: 0px 0px 50px rgb(255, 0, 0)
+  }#heee{
+    width: 21vw;
+    border-radius: 200px;
+box-shadow: 0px 0px 50px rgb(255, 255, 255)
+  }#heeee{
+    width: 21vw;
+    border-radius: 200px;
+box-shadow: 0px 0px 50px rgb(4, 0, 255)
+  }
+
+  
+@media (max-width: 995px) {
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+  header { flex-direction: column; height: auto; padding: 1rem 4%; }
+  nav { flex-wrap: wrap; gap: 1.2rem; margin-top: 1rem; }
+  nav a { font-size: 1.5rem; padding: 0.5rem 1rem; }
+  .home { flex-direction: column; gap: 4rem; text-align: center; }
+  .home .home-content h1 { font-size: 5rem; }
+  .home-image img { width: 50vh; margin-top: 4rem; }
+  section { padding-bottom: 0; }
+}
+
+@media (max-width: 415px) {
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ 
+}
+  html { font-size: 55%; }
+  header { padding: 1rem 3%; }
+  nav { gap: 0.8rem; }
+  nav a { font-size: 1.3rem; padding: 0.4rem 0.8rem; }
+  .home .home-content h1 { font-size: 3.8rem; }
+  .typing { font-size: 2.6rem; }
+  .icon img { width: 5rem; height: 4rem; }
+}
+
+@media (max-width: 370px) {
+  nav { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+  nav a { font-size: 1.2rem; padding: 0.3rem 0.6rem; }
+  .logo { font-size: 2.5rem; }
+  .home .home-content h1 { font-size: 3.4rem; }
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}@media (max-width: 500px) {
+  .home-img{
+    scale: 1;
+  }nav{
+   
+  }p{
+    font-size: 18px;
+  }.type{
+    font-size: 18px;
+  }
+}
+     
