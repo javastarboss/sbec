@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+      <link rel="icon" href="images1/iconss/sbeclogo.png" type="image/png">
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>information</title>
+
+</head>
+<body>
+  <style>
+#header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between; /* Spreads input and button apart */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  
+  z-index: 9;
+  background-color: rgb(0, 0, 0);
+  padding: 0 15px; /* Adds a little breathing room on the sides */
+}
+
+#rel {
+  position: relative;
+  flex: 1; /* Makes the input container take up available space */
+  max-width: 600px; /* Prevents it from getting too long on desktop */
+}
+
+img {
+  position: absolute;
+  scale: 0.4;
+  left: 5px;
+  top: 20%;
+  transform: translateY(-50%); /* Centers the icon vertically */
+  z-index: 2;
+  margin-left:200px ;
+}
+
+#input {
+  width: 170%; /* Important: takes full width of #rel */
+  padding: 10px 10px 10px 45px; /* Extra left padding so text doesn't hit the icon */
+  text-align: left;
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  border: none;
+  margin-left: 200px;
+}
+
+button {
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  color: #050404;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 100px;
+  border-bottom: 5px solid rgb(6, 255, 255);
+  margin-left: 15px; /* Smaller margin so it doesn't push off screen */
+  font-size: 16px;
+  white-space: nowrap; /* Keeps text on one line */
+}#main-body{
+padding: 120px;
+}
+
+/* --- MOBILE SPECIFIC FIXES --- */
+@media (max-width: 800px){
+#input{
+  margin-left: 0px;
+}
+table{
+    margin-left: -70px !important;
+    scale: 0,7!important;
+    width: 100%;
+    margin: 0 auto;
+}}
+@media (max-width: 1114px){
+  #input{
+
+width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  #header {
+    height: 70px; /* Slightly shorter for mobile */
+    padding: 0 10px;
+  }
+  
+  #input {
+    font-size: 14px; /* Easier to read on small screens */
+    margin-left: 0px;
+    width: 250px;
+  }
+
+  button {
+    min-width: 80px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Fixes your table from flying off-screen */
+  table {
+    margin-left: -240px !important;
+    scale: 0.58 !important;
+    width: 95%;
+    margin: 0 auto;
+  }#main-body{
+
+  }
+}@media (max-width: 375px) {
+  #header {
+    height: 70px; /* Slightly shorter for mobile */
+    padding: 0 10px;
+  }
+  
+  #input {
+    font-size: 14px; /* Easier to read on small screens */
+  }
+
+  button {
+    min-width: 80px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Fixes your table from flying off-screen */
+  table {
+    margin-left: -270px !important;
+    scale: 0.5 !important;
+    width: 100%;
+    margin: 0 auto;
+  }#main-body{
+
+  }
+}
+
+  </style> 
+<div id="header">
+   <div id="rel"><input id="input" type="text"><img src="images1/iconss/search-icon.png"> </div>
+<button id="cvs">Cvs File</button>
+</div>
+<div id="main-body">
+  <div id="container">
+<table border="1" style="border-color: rgb(211, 211, 211); scale: calc(1.5); margin-left: 600px; color: rgb(221, 50, 50); background-color: black;">
+   
+    <div id="user">Loading.............. User Food Info</div> 
+    </table>
+  </div>
+</div>
+
+
+</body>
+<script type="module" src="cart/user.js"></script>
+</html>

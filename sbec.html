@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang = 'en'>
+   <head> <!-- REMOVE this from HTML: --> <!-- <script type="module"> import { initializeApp } from ... ... </script> --> <!--end--> 
+   <title>Sbec international food system</title> <!--device--> 
+   <link rel="icon" href="images1/iconss/sbeclogo.png" type="image/png">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" href="images1/iconss/sbeclogo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Galdeano&display=swap" rel="stylesheet">
+
+    <!--roboto--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+     <!--links--> 
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+     <link rel="stylesheet" href="styles/shared/general.css"> 
+     <link rel="stylesheet" href="styles/shared/sbec-header.css"> 
+     <link rel="stylesheet" href="styles/pages/sbec.css">
+      </head> <body >
+       
+<h1 id="loading-screen">
+  <img class="head" src="images1/iconss/sbeclogo.png">
+  <span id="one">S</span>
+  <span id="two">B</span>
+  <span id="three">E</span>
+  <span id="four">C</span>
+  <div class="all" style="margin-left: 8px;"></div>
+  <span id="five">F</span>
+  <span id="six">O</span>
+  <span id="seven">O</span>
+  <span id="eight">D</span>
+  <div class="all" style="margin-left: 8px;"></div>
+  <span id="nine">C</span>
+  <span id="ten">A</span>
+  <span id="eleven">N</span>
+  <span id="twelive">T</span>
+  <span id="thirteen">I</span>
+  <span id="forteen">N</span>
+  <span id="fifteen">E</span>
+</h1>
+
+<style>
+  .head{
+    position: absolute;
+    top:100px;
+  }
+  #loading-screen {
+    position: fixed;
+    top: 0; bottom: 0; left:0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  rgb(1, 0, 2);
+    height: 100%;
+    margin-top: 0;
+    color: white;
+    font-size: 2.8rem;
+    gap: 6px;
+    z-index: 88;
+  }
+
+
+  #loading-screen .all { width: 18px; display:inline-block; }
+
+  #loading-screen span {
+    display: inline-block;
+    animation: ripple 1.6s ease-in infinite;
+    animation-fill-mode: both; 
+  }
+
+  #loading-screen span:nth-of-type(1){ animation-delay: 0s; }
+  #loading-screen span:nth-of-type(2){ animation-delay: 0.1s; }
+  #loading-screen span:nth-of-type(3){ animation-delay: 0.2s; }
+  #loading-screen span:nth-of-type(4){ animation-delay: 0.3s; }
+  #loading-screen span:nth-of-type(5){ animation-delay: 0.4s; }
+  #loading-screen span:nth-of-type(6){ animation-delay: 0.5s; }
+  #loading-screen span:nth-of-type(7){ animation-delay: 0.6s; }
+  #loading-screen span:nth-of-type(8){ animation-delay: 0.7s; }
+  #loading-screen span:nth-of-type(9){ animation-delay: 0.8s; }
+  #loading-screen span:nth-of-type(10){ animation-delay: 0.9s; }
+  #loading-screen span:nth-of-type(11){ animation-delay: 1s; }
+  #loading-screen span:nth-of-type(12){ animation-delay: 1.1s; }
+  #loading-screen span:nth-of-type(13){ animation-delay: 1.2s; }
+  #loading-screen span:nth-of-type(14){ animation-delay: 1.3s; }
+  #loading-screen span:nth-of-type(15){ animation-delay: 1.4s; }
+  #loading-screen span:nth-of-type(16){ animation-delay: 1.5s; }
+
+  /* fixed keyframes: start/end at rest, peak in middle; color stops preserved-ish */
+  @keyframes ripple {
+    0% {
+      transform: translateY(1) scale(1.5);
+      color: rgb(255, 9, 62);
+    }
+    20% {
+      transform: translateY(-10px) scale(1.08);
+      color: rgb(255, 2, 2);
+    }
+    40% {
+      transform: translateY(0) scale(1.5);
+      color: rgb(8, 247, 255);
+    }
+    60% {
+      transform: translateY(-8px) scale(1.04);
+      color: rgb(132, 0, 255);
+    }
+    80% {
+      transform: translateY(0) scale(1);
+      color: rgb(255, 255, 7);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      color: rgb(255, 140, 0);
+    }
+  }@media(max-width: 550px){
+    #loading-screen{
+      font-size: 20px;
+      
+    }h1 span{
+      margin-top: -250px;
+
+    }
+  }
+</style>
+
+ 
+        <div class="sbec-header"> 
+        <div class="sbec-header-left-section"> 
+          <a href="sbec.html"  class="header-link" > 
+            <img class='logo' src="images1/iconss/sbeclogo.png">
+             </a> <!--2 end--></div><div class="stick" style="z-index: 999;">stick-up</div> <div class="sbec-header-middle-section">
+               <input class="search-bar" type="text" placeholder="Search"> 
+               <button class="search-button"> 
+                <img class="search-icon" src="images1/iconss/search-icon.png"> 
+              </button> 
+               </div> <!--div3 end--> <div class="sbec-header-right-section">
+                 <a href="cash.html"><button class="cash">Send <br> Cash</button></a>
+                <!--ancho1 end--> 
+                  <a class="cart-links header-links" href="check.html"> 
+                    <img class="cart-icons" src="images1/iconss/cart-icon.png"> 
+                    <div class="cart-quantitys js-quantity">0</div> 
+                    <div class="cart-texts">orders</div> </a><!--ancho2 end-->
+                   </div><!--div4 end-->
+                  
+                     </div><!--div1--> 
+               <a href="info.html" ><button class="info">Info</button></a>
+                     <div class="amount" style="  background:rgba(0, 0, 0, 0.751);
+"><span class="span">D</span><span>0</span> 
+                     </div> 
+                    
+                     <!--<button id="logoutBtn" class="logoutBtn">Logout</button>-->
+                 <button class="logoutBtn" onclick="togglePopup()">Profile</button>
+
+<div id="popupPage" class="page-overlay">
+    <div class="page-content">
+        <h3>👤USER :</h3>
+      
+       <div class="name"> <span class="spant" id="name">EBRIMA DAMPHA</span></div> 
+        <div class="user-id">🆔 ID : <span id = 'id'> loading..</span></div>
+<div class="user-amount"  >💵 Cash : <span class="spans">D 0</span>
+                     </div> 
+        <button id="logoutBtn" class="logout-Btn">Logout</button>
+                <button onclick="togglePopup()" class="logout-Btn">Close</button>
+
+    </div>
+</div>
+                                 <!---<div class="amount"><span class="span">D</span>6500</span></div>--> <!--new-->
+                      <div class="mains" >
+                    
+                        <div class="product-grids js-food"  > <!--new--> </div><!--div2--> 
+                        
+                        </div> <button id="add-money-button" style="display: none;">💰 Add G$1000</button>
+                        <script type="module" src="java/sbec.js" defer></script>
+
+                        
+                          </script>
+                          <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+  type="module"
+></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>function togglePopup() {
+    const popup = document.getElementById('popupPage');
+    popup.classList.toggle('active');
+}   </script>
+
+                          <button class="admin">admin</button>
+                           </body>
+                            </html>
+                           

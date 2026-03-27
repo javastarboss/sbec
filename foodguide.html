@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images1/iconss/sbeclogo.png" type="image/png">
+
+  <meta name ="viewport"
+content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/shared/foodguide.css">
+<title>Food Guide</title>
+</head>
+<body style="background-color: black; color: white; ">
+  <div class="head">
+   <a href="check.html"><img class="logo" src="images1/iconss/sbeclogo.png"></a>
+  </div>
+  <div class="title">Weekly Food Date</div>
+<div class="main">
+<!--1-->
+<div class="order-grid">
+   <div class="order-container">
+<div class="order-header">
+<div class="order-header-section">
+<div class="order-date">
+<div class="order-name"> Burger</div>
+
+</div>
+</div>
+</div>
+<div class="order-details-grid">
+  <div class="order-image-container">
+<img src="https://tse2.mm.bing.net/th/id/OIP.PR2IrnRmlB6xFcqrbAOndgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </div>
+  <div class="product-details"><div class="product-name">Name: <span></span></div>
+  <div class="product-date">Date: <span></span></div>
+  <div class="product-price">Price: D<span></span></div>
+</div>
+   </div>
+  </div>
+  <!--1-->
+</div>
+</div>
+
+<script>
+  let orders =[
+   ,{
+    image:  'foods/b.png',
+    name: 'Boabab Juice',
+    date: 'Daily',
+    Price: 30
+  }
+  ,{
+    image:  'foods/v.jpg' ,
+    name: 'Vegetable Spring Rolls',
+    date: 'Daily',
+    Price: 30
+  },
+  {
+    image:  'foods/vc.png',
+    name: 'Butter Cake',
+    date: 'Daily',
+    Price: 30
+  },{
+    image:  'foods/m.jpg',
+    name: 'Moist Chocolate Cake',
+    date: 'Daily',
+    Price: 30
+  }
+  ,{
+    image:  "foods/bbb.png",
+    name: 'Chocolate Brownie',
+    date: 'Daily',
+    Price: 50
+  },{
+    image:   "foods/mm.jpg",
+    name: 'Meat Pie',
+    date: 'Daily',
+    Price: 30
+  },{
+    image:  "foods/w.png",
+    name: 'Wonjo Juice',
+    date: 'Daily',
+    Price: 30
+  },{
+    image:  "foods/s.jpeg",
+    name: 'Sausages',
+    date: ' Daily',
+    Price: 30
+  },{
+    image:  "foods/c.png",
+    name: 'Chicken With Fries',
+    Date: 'Avaliable On Monday',
+    Price: 150,
+    date: 'Monday'
+  },{
+    image:  "foods/bbbb.png",
+    name: 'Benechine',
+    Date: 'Avaliable On Monday',
+    Price: 100,
+    date: 'Monday'
+  },{
+    image:  "foods/m.png",
+    name: 'Chicken Combo',
+    Date: 'Avaliable On Monday',
+    Price: 150,
+    date: 'Monday'
+  },{
+  image:"foods/ch.png" ,
+    name: 'Chicken Vermecell',
+    Date: 'Avaliable On Tuesday',
+    Price: 150  ,
+    date: 'Tuesday'
+  },{
+    image: "foods/d.png",
+    name: 'Domoda',
+    Date: 'Avaliable On Tuesday',
+    Price: 100,
+    date: 'Tuesday'
+  },{
+    image:  "foods/ss.jpg",
+    name: 'Chicken Shawarma',
+    Date: 'Avaliable On Wednesday',
+    Price: 150, 
+    date: 'Wednesday'
+  },{image: "foods/mc.jpg",
+    name: 'Mac & Cheese',
+    Date: 'Avaliable On Wednesday',
+    Price: 100,
+    date: 'Thurday'
+  },{
+    image:  "foods/v.png",
+    name: 'Chicken Yasa',
+    Date: 'Avaliable On Wednesday',
+    Price: 100, 
+    date:'Wednesday'
+  },{
+    image: "foods/bu.png",
+    name: 'Burger Beef',
+    Date: 'Avaliable On Thursday',
+    Price: 150,
+    date: 'Thurday'
+  } ,{
+   image: "foods/pl.png",
+    name: 'Plasas',
+    Date: 'Avaliable On Thursday',
+    Price: 100,
+    date: 'Thurday'
+  },{
+    image:  "foods/ff.png",
+    name: 'FuFu',
+    Date: 'Avaliable On Thursday',
+    Price: 100,
+    date: 'Thurday'
+  },{
+    image:  "foods/ss.png",
+    name: 'SupaKanja',
+    Date: 'Avaliable On Thursday',
+    Price: 100,
+    date:'Thursday'
+  },{
+    image: "foods/p.png",
+    name: 'Pizza',
+    Date: 'Avaliable On Friday',
+    Price: 150,
+    date: 'Friday'
+  },{
+    image:  "foods/e.png",
+    name: 'Ebbeh',
+    Date: 'Avaliable On Friday',
+    Price: 50,
+    date:'Friday'
+  },{
+    image:  "foods/pp.png",
+    name: 'Pasta',
+    Date: 'Avaliable On Friday',
+    Price: 75,
+    date: 'Friday'
+  }]
+
+
+  let everydayfood = [,{
+    image:  "foods/w.png",
+    name: 'Wonjo Juice',
+    Date: 'Daily',
+    Price: 30
+  },{
+    image:   "foods/m.jpeg",
+    name: 'Meat Pie',
+    date: 'Daily',
+    Price: 30
+  },{
+    image:  'foods/b.png',
+    name: 'Boabab Juice',
+    Date: 'Daily',
+    Price: 30
+  }]
+
+
+let contain = ''
+  orders.forEach(each =>{
+contain += `
+<div class="order-grid">
+   <div class="order-container">
+<div class="order-header">
+<div class="order-header-section">
+<div class="order-date">
+<div class="order-name"> ${each.date}</div>
+
+</div>
+</div>
+</div>
+<div class="order-details-grid">
+  <div class="order-image-container">
+<img src="${each.image}">
+  </div>
+  <div class="product-details"><div class="product-name">Name: <span>${each.name}</span></div>
+  <div class="product-date">Date: <span>${each.date}</span></div>
+  <div class="product-price">Price: D<span>${each.Price}</span></div>
+</div>
+   </div>
+  </div>
+  <!--1-->
+</div>
+`
+return contain
+  })
+  document.querySelector('.main').innerHTML = contain
+
+  
+
+</script>
+</body>
+
+</html>
